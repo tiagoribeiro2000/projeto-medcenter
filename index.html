@@ -6,6 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/template.css" />
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                document.querySelector(".menu nav ul").style.display = 'none';
+
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
     <title>MedCenter</title>
 </head>
 
@@ -13,10 +25,15 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href=""><img src="assets/images/logo.png" /></a>
+                <a href=""><img src="assets/Images/logo.png" /></a>
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menuMobile">
+                        <div class="mn_line"></div>
+                        <div class="mn_line"></div>
+                        <div class="mn_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="">HOME</a></li>
                         <li><a href="">HOME</a></li>
@@ -29,6 +46,7 @@
             </div>
         </div>
     </header>
+
     <section id="banner">
         <div class="container column">
             <div class="banner_headline">
@@ -184,16 +202,19 @@
                         <div class="widget_title_text">Departments</div>
                         <div class="widget_title_bar"></div>
                     </div>
-                    <div class="widget_body">
-                        <div class="grupo_blocos">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                    <section class="block_blue">
+                        <div class="bloco1">
+                            <div class="grid_block_aside"></div>
+                            <div class="grid_block_aside"></div>
+                            <div class="grid_block_aside"></div>
                         </div>
-                    </div>
+                   
+                        <div class="bloco2">
+                            <div class="grid_block_aside"></div>
+                            <div class="grid_block_aside"></div>
+                            <div class="grid_block_aside"></div>
+                        </div>
+                    </section>
                 </div>
                 <div class="widget">
                     <div class="widget_title">
@@ -206,15 +227,15 @@
                         </div>
                         <div class="logo_contatos">
                             <div class="linha1">
-                                <div class="img"><img src="assets/Images/call.png" /></div>
+                                <div class="img"></div>
                                 <div>by phone: <strong>1-800-643-4300</strong></div>
                             </div>
                             <div class="linha2">
-                                <div class="img"><img src="assets/Images/mail.png" /></div>
+                                <div class="img"></div>
                                 <div>by e-mail: email@emil.com.br</div>
                             </div>
                             <div class="linha3">
-                                <div class="img"><img src="assets/Images/google-forms.png" /></div>
+                                <div class="img"></div>
                                 <div>or fill out our form</div>
                             </div>
                         </div>
@@ -281,7 +302,8 @@
                         </div>
                         <div class="widget_body">
                             <div class="lts_posts">
-                                Lorem ipsum dolor sit amet. Quo dolor rerum et quia enim in quibusdam beatae sit debitis.
+                                Lorem ipsum dolor sit amet. Quo dolor rerum et quia enim in quibusdam beatae sit
+                                debitis.
                                 <div class="time_post">
                                     6 years ago
                                 </div>
@@ -309,7 +331,8 @@
                         </div>
                         <div class="widget_body">
                             <div class="tweets_posts">
-                                Lorem ipsum dolor sit amet. Et odit obcaecati hic natus quae non aperiam magnam qui minus sequi et ratione voluptatem et voluptatem quas et voluptatem exercitationem.
+                                Lorem ipsum dolor sit amet. Et odit obcaecati hic natus quae non aperiam magnam qui
+                                minus sequi et ratione voluptatem et voluptatem quas et voluptatem exercitationem.
                                 <div class="tweets_timeposts">
                                     6 years ago
                                 </div>
@@ -317,7 +340,8 @@
                         </div>
                         <div class="widget_body">
                             <div class="tweets_posts">
-                                Lorem ipsum dolor sit amet. Et odit obcaecati hic natus quae non aperiam magnam qui minus sequi et ratione voluptatem et voluptatem quas et voluptatem exercitationem.
+                                Lorem ipsum dolor sit amet. Et odit obcaecati hic natus quae non aperiam magnam qui
+                                minus sequi et ratione voluptatem et voluptatem quas et voluptatem exercitationem.
                                 <div class="tweets_timeposts">
                                     6 years ago
                                 </div>
@@ -325,7 +349,8 @@
                         </div>
                         <div class="widget_body">
                             <div class="tweets_posts">
-                                Lorem ipsum dolor sit amet. Et odit obcaecati hic natus quae non aperiam magnam qui minus sequi et ratione voluptatem et voluptatem quas et voluptatem exercitationem.
+                                Lorem ipsum dolor sit amet. Et odit obcaecati hic natus quae non aperiam magnam qui
+                                minus sequi et ratione voluptatem et voluptatem quas et voluptatem exercitationem.
                                 <div class="tweets_timeposts">
                                     6 years ago
                                 </div>
